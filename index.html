@@ -5,6 +5,7 @@
 	<title>Danish Mehboob</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Biryani:200,700|Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="iziModal.min.css">
 </head>
 <body class="container">
 
@@ -19,24 +20,6 @@
 		</nav>
 		
 	</header>
-
-	<script>
-	$(function () {
-		$("buttonClick").click(function() {
-			$("DivPopUp").dialog({
-				width:430,
-				height:200,
-				modal: true,
-				buttons: {
-					Close:
-					function(){
-						$(this).dialog('close');
-					}
-				}
-			});
-		});
-	})
-	</script>
 
 	<main role="main">
 		<section class="intro">
@@ -55,6 +38,15 @@
                     </a>
                 </p>
 		</section>
+
+		<script>
+			$(document).on('click', '.trigger', function (event) {
+				event.preventDefault();
+				// $('#modal').iziModal('setZindex', 99999);
+				// $('#modal').iziModal('open', { zindex: 99999 });
+				$('#modal').iziModal('open');
+			});
+		</script>
 		
 		<section name="selected_work">
 			<span class="section_meta">
@@ -95,10 +87,10 @@
 						<p class="sample_text">Reported on the gender wage gap at the executive level in US corporations.</p>
 						<p class="sample_skills">Excel, Python, Google Sheets</p>
 					</section>
-					<button type= "button" id= "buttonClick"> More info </button>
-					<div id="DivPopUp" style="display:none">
-						This popup is using jquery
+					<div id="modal" data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home">
+						first model tryout with new package from iziModal
 					</div>
+					<a href="https://github.com/dolce/iziModal" class="trigger">Modal</a>
 				</article>
 
 			</section>
@@ -157,9 +149,10 @@
 			</section>
 		</section>
 -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</main>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js" integrity="sha256-jx5SpNrWp5tIlHK2uGtUsZ4QRJkEV9aQXXGN3kkPXIE=" crossorigin="anonymous"></script>
+	<script src="iziModal.min.js" type="text/javascript"></script>
 </body>
 <!--
 <script>
