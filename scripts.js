@@ -1,4 +1,3 @@
-/*
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -16,13 +15,5 @@ window.onload = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-}
-*/
-var article1 = document.getElementById('article1');
-
-window.onload = function() {
-    article1.onclick = function() {
-        window.alert('This is the first article!');
     }
 }
