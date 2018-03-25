@@ -19,10 +19,10 @@ window.onclick = function(event) {
     }
 }
 */
-var article1 = document.getElementById('article1')
+var article1 = document.getElementById('article1');
 
 window.onload = function() {
     article1.onclick = function() {
-        alert('This is the first article!')
+        window.alert('This is the first article!');
     }
 }
