@@ -2,7 +2,7 @@
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("button");
 
 // When the user clicks on the button, open the modal 
 window.onload = function() {
