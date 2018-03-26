@@ -5,7 +5,7 @@ var modal = document.getElementsByClassName('modal');
 var btn = document.getElementsByClassName("modalButton");
 
 // Adding an event listner for clicking on button to open modal
-btn.addEventListener('click',openModal)
+btn[0].addEventListener('click',openModal)
 
 /* 
 to add an event listner to all the elements, need a for loop
@@ -19,7 +19,7 @@ function openModal(){
     modal[0].style.display = 'block';
 }
 
-/*
+/* This was the old method I used to open model...
 // When the user clicks on the button, open the modal 
 window.onload = function() {
     btn.onclick = function() {
@@ -28,6 +28,7 @@ window.onload = function() {
 }
 */
 
+/*This portion of the code seems to break something...
 // Rewriting function to be two parts - event listener + function
 
 window.addEventListener('click',closeModal)
@@ -37,12 +38,12 @@ function closeModal(event){
         modal.style.display = 'none';
     } 
 }
+*/
 
-/*
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-*/
