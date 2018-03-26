@@ -9,7 +9,7 @@ Adding an event listner for clicking on button to open modal
 btn[0].addEventListener('click',openModal)
 */
  
-/* Trying a different method before coming back to this one
+
 //to add an event listner to all the elements, need a for loop
 for (var i=0; i<btn.length; i++) {
     btn[i].addEventListener('click',openModal)
@@ -17,17 +17,19 @@ for (var i=0; i<btn.length; i++) {
 
 // Function to open the modal
 function openModal(){
-    modal[i].style.display = 'block';
+    modal.style.display = 'block';
 }
-*/
 
-//My new method to try, based on forloop and function within a function
+/*
+//My new method to try
+//based on forloop and function within a function as seen right below,
+//but does not work properly.
 for (var i=0; i<btn.length; i++) {
     btn[i].onclick = function() {
         modal[i].style.display = "block";
     }
 }
-
+*/
 
 /* This was the old method I used to open model...
 // When the user clicks on the button, open the modal 
