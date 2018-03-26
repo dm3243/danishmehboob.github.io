@@ -30,10 +30,12 @@ window.onload = function() {
 
 // Rewriting function to be two parts - event listener + function
 
-btn.addEventListener('click',closeModal)
+window.addEventListener('click',closeModal)
 
-function closeModal(){
-    modal[0].style.display = 'none';
+function closeModal(event){
+    if(event.target == modal){
+        modal[0].style.display = 'none';
+    } 
 }
 
 /*
