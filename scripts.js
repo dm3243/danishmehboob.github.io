@@ -5,7 +5,7 @@ var modal = document.getElementsByClassName('modal');
 var btn = document.getElementsByClassName("modalButton");
 
 // Adding an event listner for clicking on button to open modal
-btn[0].addEventListener('click',openModal)
+btn.addEventListener('click',openModal)
 
 /* 
 to add an event listner to all the elements, need a for loop
