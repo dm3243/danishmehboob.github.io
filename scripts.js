@@ -1,8 +1,8 @@
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementsByClassName('modal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("button");
+var btn = document.getElementsByClassName("modalButton");
 
 // Adding an event listner for clicking on button to open modal
 btn.addEventListener('click',openModal)
