@@ -16,7 +16,7 @@ for (var i=o, i<btn.length, i++) {
 
 // Function to open the modal
 function openModal(){
-    modal.style.display = 'block';
+    modal[0].style.display = 'block';
 }
 
 /*
