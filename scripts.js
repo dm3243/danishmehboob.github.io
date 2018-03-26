@@ -34,7 +34,7 @@ window.addEventListener('click',closeModal)
 
 function closeModal(event){
     if(event.target == modal){
-        modal[0].style.display = 'none';
+        modal.style.display = 'none';
     } 
 }
 
