@@ -1,8 +1,8 @@
 // Get the modals
-var modals = document.querySelectorAll('.modal');
+const modals = document.querySelectorAll('.modal');
 
 // Get the button that opens the modal
-var btns = document.querySelectorAll('.modalButton');
+const btns = document.querySelectorAll('.modalButton');
 
 //to add an event listner to all the elements, need a for loop or forEach iterator
 btns.forEach(function(button, index) {
